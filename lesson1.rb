@@ -17,6 +17,11 @@ class Lesson1
   end
 
   def name
-    # TODO
+    full_name = ''
+    3.times do
+      input = gets.chomp
+      full_name += input + ' '
+    end
+    "Hello #{full_name.rstrip}!"
   end
 end
