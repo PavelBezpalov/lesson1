@@ -1,7 +1,9 @@
 require 'date'
 class Lesson1
   def sum(val = 0)
-    # TODO
+    sum = 0
+    val.to_s.gsub(/[^0-9]/, '').each_char { |c| sum += c.to_i }
+    sum
   end
 
   def age(birthday)
