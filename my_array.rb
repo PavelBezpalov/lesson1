@@ -34,7 +34,7 @@ class MyArray
   end
 
   def multiple_to_three
-    @array.delete_if { |i| i % 3 > 0 }
+    @array.select { |i| i % 3 == 0 }
   end
 
   def uniq
@@ -56,9 +56,10 @@ class MyArray
     max = @array.max
     min_index = @array.index(min)
     max_index = @array.index(max)
-    @array[min_index] = max
-    @array[max_index] = min
-    @array
+    dup_array = @array.dup
+    dup_array[min_index] = max
+    dup_array[max_index] = min
+    dup_array
   end
 
   def before_min
