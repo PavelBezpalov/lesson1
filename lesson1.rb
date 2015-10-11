@@ -5,14 +5,12 @@ class Lesson1
   end
 
   def age(birthday)
-    if birthday
-      current_date = Date.parse(Time.now.to_s)
-      birthday_date = Date.parse(birthday)
-      age_in_days = (current_date - birthday_date).to_i
-      return "Я живу #{age_in_days / 365} года или #{age_in_days} дней или " \
-             "#{age_in_days * 24} часов или #{age_in_days * 24 * 60} минут " \
-             "или #{age_in_days * 24 * 60 * 60} секунд"
-    end
+    birthday_date = Date.parse(birthday)
+    age_in_days = (Date.today - birthday_date).to_i
+    "Я живу #{age_in_days / 365} года или #{age_in_days} дней или " \
+      "#{age_in_days * 24} часов или #{age_in_days * 24 * 60} минут " \
+      "или #{age_in_days * 24 * 60 * 60} секунд"
+  rescue ArgumentError, TypeError
     'Invalid Date Format'
   end
 
