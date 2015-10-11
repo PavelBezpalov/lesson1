@@ -30,7 +30,7 @@ class MyArray
   end
 
   def odd
-    @array.select { |i| i % 2 > 0 }
+    @array.select(&:odd?)
   end
 
   def multiple_to_three
@@ -46,7 +46,7 @@ class MyArray
   end
 
   def chars
-    @array.map do |x|
+    @array.select { |n| n.between?(1, 26) }.map do |x|
       ('a'..'z').to_a[x - 1].to_sym
     end
   end
@@ -56,10 +56,8 @@ class MyArray
     max = @array.max
     min_index = @array.index(min)
     max_index = @array.index(max)
-    @array.insert(min_index, max)
-    @array.delete_at(min_index + 1)
-    @array.insert(max_index, min)
-    @array.delete_at(max_index + 1)
+    @array[min_index] = max
+    @array[max_index] = min
     @array
   end
 
