@@ -1,9 +1,10 @@
 require 'date'
+require 'active_support'
+require 'active_support/core_ext'
+
 class Lesson1
   def sum(val = 0)
-    sum = 0
-    val.to_s.gsub(/[^0-9]/, '').each_char { |c| sum += c.to_i }
-    sum
+    val.to_s.split('').sum(&:to_i)
   end
 
   def age(birthday)
@@ -17,8 +18,12 @@ class Lesson1
   end
 
   def name
+    prompt = ['Enter your Name: ',
+              'Enter your Middle Name: ',
+              'Enter your Family Name: ']
     full_name = ''
-    3.times do
+    (1..3).each do |i|
+      print prompt[i - 1]
       input = gets.chomp
       full_name += input + ' '
     end
