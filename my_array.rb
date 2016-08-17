@@ -22,7 +22,7 @@ class MyArray
   end
 
   def desc
-    # TODO
+    @array.sort.reverse
   end
 
   def asc
