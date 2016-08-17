@@ -30,7 +30,7 @@ class MyArray
   end
 
   def odd
-    # TODO
+    @array.select { |a| a % 2 > 0 }
   end
 
   def multiple_to_three
