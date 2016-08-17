@@ -6,7 +6,7 @@ class MyArray
   end
 
   def size
-    # TODO
+    @array.size
   end
 
   def reverse
