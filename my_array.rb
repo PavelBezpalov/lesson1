@@ -26,7 +26,7 @@ class MyArray
   end
 
   def asc
-    # TODO
+    @array.sort
   end
 
   def odd
