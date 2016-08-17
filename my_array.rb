@@ -34,7 +34,7 @@ class MyArray
   end
 
   def multiple_to_three
-    # TODO
+    @array.select { |a| a % 3 == 0 }
   end
 
   def uniq
