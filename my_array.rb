@@ -10,7 +10,7 @@ class MyArray
   end
 
   def reverse
-    # TODO
+    @array.reverse
   end
 
   def max
