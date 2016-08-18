@@ -11,6 +11,9 @@ class Lesson1
   end
 
   def name
-    # TODO
+    name = gets.chomp
+    surname = gets.chomp
+    patronymic = gets.chomp
+    "Hello #{name} #{surname} #{patronymic}!"
   end
 end
