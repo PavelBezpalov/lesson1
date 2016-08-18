@@ -46,7 +46,8 @@ class MyArray
   end
 
   def chars
-    # TODO
+    array_char = ('a'..'z').to_a
+    @array.collect { |a| array_char[a - 1].to_sym }
   end
 
   def switch
