@@ -38,7 +38,7 @@ class MyArray
   end
 
   def uniq
-    # TODO
+    @array.uniq
   end
 
   def devide_on_ten
