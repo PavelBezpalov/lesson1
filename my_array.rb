@@ -58,7 +58,11 @@ class MyArray
   end
 
   def before_min
-    # TODO
+    if @array.index(@array.min) == 0
+      []
+    else
+      @array[@array.index(@array.min) - 1]
+    end
   end
 
   def three_smallest
