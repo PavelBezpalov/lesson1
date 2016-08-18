@@ -7,7 +7,16 @@ class Lesson1
   end
 
   def age(birthday)
-    # TODO
+    if birthday
+      days = (Date.parse(Time.now.to_s) - Date.parse(birthday)).to_i
+      years = days / 365
+      hours = days * 24
+      min = hours * 60
+      sec = min * 60
+      "Я живу #{years} года или #{days} дней или #{hours} часов
+      или #{min} минут или #{sec} секунд"
+    else 'Invalid Date Format'
+    end
   end
 
   def name
