@@ -63,6 +63,7 @@ class MyArray
     else
       @array[@array.index(@array.min) - 1]
     end
+    # @array.min
   end
 
   def three_smallest
