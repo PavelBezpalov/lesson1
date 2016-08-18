@@ -51,7 +51,10 @@ class MyArray
   end
 
   def switch
-    # TODO
+    max_index = @array.index(@array.max)
+    min_index = @array.index(@array.min)
+    @array[max_index], @array[min_index] = @array[min_index], @array[max_index]
+    @array
   end
 
   def before_min
