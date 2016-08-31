@@ -7,7 +7,7 @@ RSpec.describe MyArray do
   it { expect(array.size).to eql(10) }
   it { expect(arr.reverse).to eql([2, 3, 1]) }
   it { expect(array.max).to eql(10) }
-  it { expect(array.min).to eql(1) }
+  it { expect(array.minimum).to eql(1) }
   it { expect(arr.asc).to eql([1, 2, 3]) }
   it { expect(arr.desc).to eql([3, 2, 1]) }
   it { expect(arr.odd).to eql([1, 3]) }

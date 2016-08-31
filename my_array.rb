@@ -17,7 +17,7 @@ class MyArray
     @array.max
   end
 
-  def min
+  def minimum
     @array.min
   end
 
