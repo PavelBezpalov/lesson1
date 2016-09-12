@@ -25,8 +25,4 @@ class Lesson1
     patronymic = gets.chomp
     "Hello #{name} #{surname} #{patronymic}!"
   end
-
-  def test
-    # TODO
-  end
 end
