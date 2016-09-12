@@ -25,4 +25,8 @@ class Lesson1
     patronymic = gets.chomp
     "Hello #{name} #{surname} #{patronymic}!"
   end
+
+  def status
+    # TODO
+  end
 end
