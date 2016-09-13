@@ -64,4 +64,8 @@ class MyArray
   def three_smallest
     @array.sort.take(3)
   end
+
+  def test
+    # TODO
+  end
 end
