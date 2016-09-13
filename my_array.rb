@@ -41,10 +41,6 @@ class MyArray
     @array.uniq
   end
 
-  def devide_on_ten
-    # TODO
-  end
-
   def chars
     array_char = ('a'..'z').to_a
     @array.collect { |a| array_char[a - 1].to_sym }
@@ -63,7 +59,6 @@ class MyArray
     else
       @array[@array.index(@array.min) - 1]
     end
-    # @array.min
   end
 
   def three_smallest
