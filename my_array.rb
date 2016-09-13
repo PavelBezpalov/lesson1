@@ -9,6 +9,10 @@ class MyArray
     @array.size
   end
 
+  def some_method
+    # TODO
+  end
+
   def reverse
     @array.reverse
   end
