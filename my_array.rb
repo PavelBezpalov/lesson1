@@ -21,6 +21,10 @@ class MyArray
     @array.max
   end
 
+  def method
+    # TODO
+  end
+
   def minimum
     @array.min
   end
