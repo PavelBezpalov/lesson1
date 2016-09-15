@@ -49,6 +49,10 @@ class MyArray
     @array.uniq
   end
 
+  def devide_on_ten
+    @array.collect { |i| i / 10.to_f }
+  end
+
   def chars
     array_char = ('a'..'z').to_a
     @array.collect { |a| array_char[a - 1].to_sym }
