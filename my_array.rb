@@ -9,20 +9,12 @@ class MyArray
     @array.size
   end
 
-  def some_method
-    # TODO
-  end
-
   def reverse
     @array.reverse
   end
 
   def max
     @array.max
-  end
-
-  def method
-    # TODO
   end
 
   def minimum
